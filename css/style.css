@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family:sans-serif;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%
+}
+
+b,strong{
+    font-weight:inherit
+}
+b,strong{
+    font-weight:bolder
+}
+
+h1{
+    font-size:2em;
+    margin:0.67em 0
+}
+
+img{
+    border-style:none
+}
+
+html,body{
+    width: 100%;
+    height: 2000px;
+    font-size: 14px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-weight: 200;
+}
+        /*head部分开始*/
+.wrapper{
+    /*width: 1170px;*/
+   /*overflow: hidden;*/
+    /*margin: 0 auto;*/
+
+}
+
+#nav{
+    /*height: 55px;*/
+    /*position: relative;*/
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    overflow: hidden;           /*解决父元素塌陷问题*/
+    background: rgba(245,245,245 ,0.6);
+   z-index: 1;     /*设置导航定位优先级最高*/
+}
+#nav ul{
+    float: right;
+}
+#nav.wrapper{
+    /*text-align: center;*/
+    /*width: 60px;*/
+    /*height: 60px;*/
+    /*height: 100%;*/
+    /*height: 55px;*/
+    /*position: relative;*/
+    /*top:50%;*/
+    /*left: 50%;*/
+    /*float: left;*/
+
+}
+#nav i{
+    line-height:30px;
+    height: 27px;
+    width: 32px;
+    /*padding: 15px 0;*/
+    position: relative;
+    /*top: 50%;*/
+    left: 48%;
+    cursor: pointer;
+    /*margin-top:-13px;*/
+    /*margin-left:-16px;*/
+    font-size: xx-large;
+    display: none;
+
+}
+#nav ul li{
+    /*color: #fff;*/
+    font-size: medium;
+    height: 100%;
+    /*margin-right:1rem;*/
+    float: left;
+    padding: 10px 15px;
+    cursor: pointer;
+    /*vertical-align: middle;*/
+}
+
+.page-scroll{
+
+}
+#nav .btn-menu{
+    top: 20px;
+    left: 20px;
+    position: relative;
+    display: none;
+}
+#nav .selected{
+    border-bottom:3px solid;
+}
+
+        /*head部分结束*/
+
+        /*home部分开始*/
+#home{
+    padding-top: 56%;
+    margin-bottom: 100px;
+    /*float: left;*/
+    position: relative;
+    /*width: 100%;*/
+    /*height: 758.8px;*/
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-head-1.jpg");
+    -webkit-background-size:cover;
+    background-size:cover;
+    /*background-position: -700px -400px;*/
+}
+.carouselImg{
+    position: absolute;
+}
+.carouselImg {
+    width: 100%;
+    display: block;
+    top:-120px;
+}
+.carouselImg img, .selected{
+    display: block;
+}
+.header-content{
+    position: absolute;
+    left: 35%;
+    top: 45%;
+    text-align: center;
+    margin-left:-150px;
+}
+.header-content  p{
+    
+    font-size: 60px;
+    font-weight: 500;
+    color: #ffffea;
+
+}
+.header-content h3{
+
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffea;
+}
+.avatarPos{
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    bottom:-10%;
+    overflow: visible;
+}
+.avatar{
+    height: 150px;
+    width: 150px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #000;
+
+
+}
+        /*home部分结束*/
+
+        /*about部分开始*/
+#about{
+    margin-bottom: 80px;
+}
+#about h1{
+    text-align: center;
+}
+.about-left{
+    /*background: #f00;*/
+    /*position: relative;*/
+    /*left: 22%;*/
+    /*display: inline-block;*/
+    font-size: large;
+}
+.about-left span{
+    margin: 5px;
+}
+.about-right{
+    font-size: large;
+    /*line-height:20px;*/
+    /*top: 30px;*/
+    /*width:400px;*/
+    /*height: 180px;*/
+    /*!*background: #ff0;*!*/
+    /*position: relative;*/
+    /*left: 34%;*/
+    /*display:inline-block;*/
+}
+.about-right span{
+    margin: 5px;
+}
+        /*about部分结束*/
+
+        /*skill部分开始*/
+#skill{
+    margin-bottom: 80px;
+}
+#skill h1{
+    text-align: center;
+    /*font-size:x-large;*/
+    /*font-weight: 500;*/
+}
+.skill-left{
+
+    /*height:20px;*/
+    /*background: #f00;*/
+    /*position: relative;*/
+    /*left: 22%;*/
+    /*display: inline-block;*/
+}
+
+
+.skillbar{
+
+    height: 30px;
+    background: #f0f0f0;
+    margin: 5px;
+    border-radius: 10px;
+    display: inline-block;
+
+}
+.skillbar-tittle{
+    width: 100px;
+    height: 30px;
+    background: #3d3d3d;
+    text-align: center;
+    border-radius: 10px  0 0 10px ;
+    display: inline-block;
+    float: left;
+    color: #fff;
+}
+.skillbar-tittle span{
+    line-height:30px;
+    display: inline-block;
+
+}
+.skillbar-bar{
+    display: inline-block;
+    height: 30px;
+    background:#5c5c5c ;
+
+}
+.skillbar-percent{
+    display: inline-block;
+    position: relative;
+    top:-30%;
+    /*float: right;*/
+
+}
+.skill-right{
+
+    /*height: 20px;*/
+    /*background: #ff0;*/
+    /*position: relative;*/
+    /*left: 23%;*/
+    /*display:inline-block;*/
+}
+.can-do{
+    /*background: #000;*/
+}
+.can-do-content1{
+    height: 200px;
+    background: #fff;
+    /*color: #000;*/
+    margin: 35px;
+    text-align: center;
+    border:2px solid #7e8385;
+    cursor: pointer;
+}
+.can-do-content2{
+    height: 200px;
+    background: #7e8385;
+    color: #fff;
+    margin: 35px;
+    text-align: center;
+    border:2px solid #7e8385;
+    cursor: pointer;
+}
+.can-do h3{
+    color: #000;
+}
+.can-do i{
+    position: relative;
+    top:10px;
+    font-size: 50px;
+}
+        /*skill部分结束*/
+
+
+
+
+
+        /*projet部分开始*/
+#project h1{
+    text-align: center;
+}
+.project-tabs{
+    /*background: #ff0;*/
+}
+.project-tabs ul li{
+
+    cursor: pointer;
+    line-height:40px;
+    text-align: center;
+    float: left;
+    margin:25px;
+    width: 80px;
+    height: 40px;
+    background: #EAEAEA;
+    color: #3c3c3c;
+}
+.project-content img{
+    margin-right: 6px;
+}
+        /*projet部分结束*/
+
+        /*blog部分开始*/
+#blog{
+}
+#blog h1{
+    text-align: center;
+}
+        /*blog部分结束*/
+
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+        /*contact开始*/
+#contact{
+    width: 100%;
+    /*height: 700px;*/
+    background: #EEEEEE;
+}
+#contact h1{
+    text-align: center;
+    color: #000;
+}
+.contact-head{
+}
+.contact-left{
+    margin-right:3%;
+    /*overflow: hidden;*/
+}
+.contact-right h4{
+    margin-bottom:12%;
+}
+.text-area{
+    margin-right:5%;
+    background: #EAEAEA;
+    border:none;
+}
+.contact-input{
+    background: #EAEAEA;
+    height: 40px;
+    width: 100%;
+    border-top:none ;
+    border-right:none ;
+    border-left:none ;
+    margin-bottom:20%;
+}
+.submit-pos{
+    text-align: center;
+}
+.contact-submit{
+    /*color: #000;*/
+    border-radius: 5px;
+    border:2px solid #fff;
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+    background: #DEDEDE;
+}
+        /*contact结束*/
+@media (max-width: 768px) {
+    #nav i{
+        display: block;
+    }
+    #nav ul{
+        float: none;
+
+    }
+    #nav ul li{
+        font-size: medium;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    #home .header-content{
+        /*position: relative;*/
+        /*float: none;*/
+        position:static;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        text-align: center;
+        margin-left:0;
+        vertical-align: middle;
+        margin-bottom: 0;
+        margin-top:-300px;
+    }
+    #home p{
+        position: relative;
+        top: 45%;
+        font-size: 20px;
+
+    }
+    #home h3{
+        position: relative;
+        font-weight: 500;
+        top: 45%;
+        font-size: 20px;
+    }
+    #home .avatarPos{
+        bottom: -15%;
+    }
+}
+
+@media (max-width: 414px) {
+    #home .avatarPos{
+        bottom: -30%;
+    }
+    #home .header-content{
+        margin-top:-180px;
+
+    }
+}
+/*@media (max-width: 800px) {*/
+    /*#nav .wrapper {*/
+        /*width: 86.7%;*/
+        /*padding-top: 48px;*/
+    /*}*/
+    /*.carouselImg img{*/
+        /*height: 360px;*/
+    /*}*/
+    /*#nav .btn-menu{*/
+        /*display: block;*/
+    /*}*/
+
+   /*#nav ul {*/
+       /*width: 100%;*/
+   /*}*/
+    /*#nav ul li{*/
+        /*display: none;*/
+        /*text-align: center;*/
+       /*!*display: none;*!*/
+        /*width: 100%;*/
+    /*}*/
+
+/*}*/
